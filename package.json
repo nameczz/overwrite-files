@@ -1,0 +1,17 @@
+{
+  "name": "overwrite-files",
+  "version": "1.0.0",
+  "description": "overwrite files by your regx and callback",
+  "main": "index.js",
+  "scripts": {
+    "test": "node demo.js"
+  },
+  "keywords": [
+    "nodejs",
+    "overwrite",
+    "files",
+    "regx"
+  ],
+  "author": "trico",
+  "license": "ISC"
+}
