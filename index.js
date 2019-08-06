@@ -3,13 +3,13 @@ const path = require('path')
 
 function overwriteFiles({
   src = null,
-  filePath = null,
+  fullPath = null,
   includesFiles = ['*'],
   regx = null,
   replaceCb = null
 }) {
-  if (!src && !filePath) {
-    console.error('filepath or src is required')
+  if (!src && !fullPath) {
+    console.error('fullPath or src is required')
     return
   }
   if (!regx) {
@@ -26,7 +26,7 @@ function overwriteFiles({
     return
   }
 
-  let _filePath = filePath || path.resolve(src)
+  let _filePath = fullPath || path.resolve(src)
   fs.readdir(_filePath, function(readDirErr, files) {
     if (readDirErr) {
       console.warn(readDirErr)
