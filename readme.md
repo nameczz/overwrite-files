@@ -1,5 +1,11 @@
 ## overwrite-files
 
+### install
+
+```console
+npm i overwrite-files
+```
+
 ### Params
 
 Only has one param which is Object.
